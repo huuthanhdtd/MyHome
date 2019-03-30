@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
   ~ /*
-  ~  * Copyright 2017 Leonardo Pirro
+  ~  * Copyright 2019 HuuThanhDTD.com
   ~  *
   ~  * Licensed under the Apache License, Version 2.0 (the "License");
   ~  * you may not use this file except in compliance with the License.
@@ -22,35 +22,92 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:padding="20dp">
+    android:padding="@dimen/normal_padding">
 
 
+
+    <ImageView
+        android:id="@+id/image_lamp_1"
+        android:layout_width="@dimen/item_height"
+        android:layout_height="@dimen/item_height"
+        android:layout_marginEnd="@dimen/normal_margin"
+        android:alpha="1"
+        android:padding="@dimen/normal_margin"
+        android:src="@drawable/ic_tile_lamp" />
     <Switch
         android:id="@+id/switch1"
         android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:layout_marginBottom="10dp"
+        android:layout_height="@dimen/switch_height"
+        android:layout_marginTop="@dimen/normal_margin"
         android:text="@string/lamp1_tile_name"
-        tools:layout_editor_absoluteX="72dp"
-        tools:layout_editor_absoluteY="56dp" />
+        android:layout_toEndOf="@+id/image_lamp_1"
+        android:layout_toRightOf="@+id/image_lamp_1" />
+
+    <ImageView
+        android:id="@+id/switch2_divider"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginBottom="@dimen/normal_margin"
+        android:layout_marginTop="@dimen/normal_margin"
+        android:layout_below="@+id/image_lamp_1"
+        android:background="@color/colorPrimary"
+        android:importantForAccessibility="no"/>
+    <ImageView
+        android:id="@+id/image_lamp_2"
+        android:layout_width="@dimen/item_height"
+        android:layout_height="@dimen/item_height"
+        android:layout_marginEnd="@dimen/normal_margin"
+        android:alpha="1"
+        android:layout_below="@id/switch2_divider"
+        android:padding="@dimen/normal_margin"
+        android:src="@drawable/ic_tile_lamp" />
 
     <Switch
         android:id="@+id/switch2"
         android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:layout_marginBottom="10dp"
-        android:layout_below="@id/switch1"
+        android:layout_height="@dimen/switch_height"
+        android:layout_marginTop="@dimen/normal_margin"
+        android:layout_below="@id/switch2_divider"
         android:text="@string/lamp2_tile_name"
-        tools:layout_editor_absoluteX="72dp"
-        tools:layout_editor_absoluteY="56dp" />
+        android:layout_toEndOf="@+id/image_lamp_2"
+        android:layout_toRightOf="@+id/image_lamp_2" />
+
+
+    <ImageView
+        android:id="@+id/switch3_divider"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginBottom="@dimen/normal_margin"
+        android:layout_marginTop="@dimen/normal_margin"
+        android:layout_below="@+id/image_lamp_2"
+        android:background="@color/colorPrimary"
+        android:importantForAccessibility="no"/>
+    <ImageView
+        android:id="@+id/image_lamp_3"
+        android:layout_width="@dimen/item_height"
+        android:layout_height="@dimen/item_height"
+        android:layout_marginEnd="@dimen/normal_margin"
+        android:alpha="1"
+        android:layout_below="@id/switch3_divider"
+        android:padding="@dimen/normal_margin"
+        android:src="@drawable/ic_tile_gate" />
 
     <Switch
         android:id="@+id/switch3"
         android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:layout_below="@id/switch2"
+        android:layout_height="@dimen/switch_height"
+        android:layout_marginTop="@dimen/normal_margin"
+        android:layout_below="@id/switch3_divider"
         android:text="@string/lamp3_tile_name"
-        tools:layout_editor_absoluteX="72dp"
-        tools:layout_editor_absoluteY="56dp" />
+        android:layout_toEndOf="@+id/image_lamp_3"
+        android:layout_toRightOf="@+id/image_lamp_3" />
+
+    <TextView
+        android:id="@+id/about_copyright"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:gravity="center_horizontal|bottom"
+        android:text="Firebase IoT v1.0\nCopyright © HuuThanhDTD.com"/>
 
 </RelativeLayout>

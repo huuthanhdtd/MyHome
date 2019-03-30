@@ -46,6 +46,21 @@ class MainActivity : AppCompatActivity() {
                 switch1.isChecked = ((preValue shr 0) and 0x1) == 1
                 switch2.isChecked = ((preValue shr 2) and 0x1) == 1
                 switch3.isChecked = ((preValue shr 1) and 0x1) == 1
+                if (switch1.isChecked){
+                    image_lamp_1.setColorFilter(getColor(R.color.colorAccent))
+                }else{
+                    image_lamp_1.setColorFilter(getColor(R.color.gray))
+                }
+                if (switch2.isChecked){
+                    image_lamp_2.setColorFilter(getColor(R.color.colorAccent))
+                }else{
+                    image_lamp_2.setColorFilter(getColor(R.color.gray))
+                }
+                if (switch3.isChecked){
+                    image_lamp_3.setColorFilter(getColor(R.color.colorAccent))
+                }else{
+                    image_lamp_3.setColorFilter(getColor(R.color.gray))
+                }
             }
 
             override fun onCancelled(databaseError: DatabaseError) {

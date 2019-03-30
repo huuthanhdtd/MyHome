@@ -27,7 +27,7 @@
         android:roundIcon="@mipmap/ic_launcher"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name="com.huuthanhdtd.myhome.MainActivity">
+        <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -36,7 +36,7 @@
         </activity>
 
         <service
-            android:name="com.huuthanhdtd.myhome.Lamp1Service"
+            android:name=".Lamp1Service"
             android:icon="@drawable/ic_tile_lamp"
             android:label="@string/lamp1_tile_name"
             android:permission="android.permission.BIND_QUICK_SETTINGS_TILE">
@@ -47,7 +47,7 @@
         </service>
 
         <service
-            android:name="com.huuthanhdtd.myhome.Lamp2Service"
+            android:name=".Lamp2Service"
             android:icon="@drawable/ic_tile_lamp"
             android:label="@string/lamp2_tile_name"
             android:permission="android.permission.BIND_QUICK_SETTINGS_TILE">
@@ -58,7 +58,7 @@
         </service>
 
         <service
-            android:name="com.huuthanhdtd.myhome.Lamp3Service"
+            android:name=".Lamp3Service"
             android:icon="@drawable/ic_tile_gate"
             android:label="@string/lamp3_tile_name"
             android:permission="android.permission.BIND_QUICK_SETTINGS_TILE">
